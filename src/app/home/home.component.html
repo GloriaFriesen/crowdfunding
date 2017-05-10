@@ -1,3 +1,6 @@
 <div>
   <h1>Welcome</h1>
+  <div *ngFor="let project of projects | async" (click)="goToDetailPage(project)">
+    {{project.title}} by {{project.innovators}}
+  </div>
 </div>

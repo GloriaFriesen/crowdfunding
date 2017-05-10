@@ -1,4 +1,18 @@
-<div class="container">
-  <h1>{{title}}</h1>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" routerLink="">Crowdfunding Chicks</a>
+    </div>
+    <ul class="nav navbar-nav navbar-right">
+    </ul>
+  </div>
+</nav>
+<div class='container'>
   <router-outlet></router-outlet>
 </div>
+<hr>
+<footer class="footer">
+  <div class="container">
+    <a routerLink="admin" class="text-muted">Admin</a>
+  </div>
+</footer>
