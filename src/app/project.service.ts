@@ -21,4 +21,14 @@ export class ProjectService {
   addProject(newProject: Project) {
     this.projects.push(newProject);
   }
+
+  updateProject(localUpdateProject) {
+    var updatedProject = this.getProjectById(localUpdateProject.$key);
+    updatedProject.update({title: localUpdateProject.title, description: localUpdateProject.description, goal: localUpdateProject.goal, purpose: localUpdateProject.purpose, rewards: localUpdateProject.rewards, type: localUpdateProject.type, innovators: localUpdateProject.innovators});
+  }
+
+  deleteProject(localProjectToDelete) {
+    var deletedProject = this.getProjectById(localProjectToDelete.$key);
+    deletedProject.remove();
+  }
 }

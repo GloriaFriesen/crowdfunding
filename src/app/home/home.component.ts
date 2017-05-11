@@ -11,6 +11,7 @@ import { ProjectService } from '../project.service';
   providers: [ProjectService]
 })
 export class HomeComponent implements OnInit {
+  currentRoute: string = this.router.url;
   projects: FirebaseListObservable<any[]>;
 
   constructor(private router: Router, private projectService: ProjectService) { }
