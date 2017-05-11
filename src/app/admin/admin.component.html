@@ -1,47 +1,49 @@
-<div class="panel panel-default">
-  <div class="panel-heading">
-    <h3 class="panel-title">Post New Venture</h3>
-  </div>
-  <div class="panel-body">
-    <div>
-      <div>
-        <label>Venture Title:</label>
-        <br>
-        <input #newTitle>
-      </div>
-      <div>
-        <label>Venture Description:</label>
-        <br>
-        <textarea #newDescription></textarea>
-      </div>
-      <div>
-        <label>Venture Funding Goal:</label>
-        <br>
-        <input #newGoal>
-      </div>
-      <div>
-        <label>Venture Purpose:</label>
-        <br>
-        <textarea #newPurpose></textarea>
-      </div>
-      <div>
-        <label>Venture Reward:</label>
-        <br>
-        <textarea #newRewards></textarea>
-      </div>
-      <div>
-        <label>Venture Type</label>
-        <br>
-        <input #newType>
-      </div>
-      <div>
-        <label>Venture Innovators:</label>
-        <br>
-        <textarea #newInnovators></textarea>
-      </div>
-      <button (click)="submitForm(newTitle.value, newDescription.value, newGoal.value, newPurpose.value, newRewards.value, newType.value, newInnovators.value); newTitle.value=''; newDescription.value=''; newGoal.value=''; newPurpose.value=''; newRewards.value=''; newType.value=''; newInnovators.value=''">Add</button>
+<div class="row">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h3 class="panel-title">Post New Venture</h3>
     </div>
-    <hr>
+    <div class="panel-body">
+      <div>
+        <div>
+          <label>Venture Title:</label>
+          <br>
+          <input #newTitle>
+        </div>
+        <div>
+          <label>Venture Description:</label>
+          <br>
+          <textarea #newDescription></textarea>
+        </div>
+        <div>
+          <label>Venture Funding Goal:</label>
+          <br>
+          <input #newGoal>
+        </div>
+        <div>
+          <label>Venture Purpose:</label>
+          <br>
+          <textarea #newPurpose></textarea>
+        </div>
+        <div>
+          <label>Venture Reward:</label>
+          <br>
+          <textarea #newRewards></textarea>
+        </div>
+        <div>
+          <label>Venture Type</label>
+          <br>
+          <input #newType>
+        </div>
+        <div>
+          <label>Venture Innovators:</label>
+          <br>
+          <textarea #newInnovators></textarea>
+        </div>
+        <button class="success button" (click)="submitForm(newTitle.value, newDescription.value, newGoal.value, newPurpose.value, newRewards.value, newType.value, newInnovators.value); newTitle.value=''; newDescription.value=''; newGoal.value=''; newPurpose.value=''; newRewards.value=''; newType.value=''; newInnovators.value=''">Add</button>
+      </div>
+      <hr>
+    </div>
   </div>
   <div>
     <app-home></app-home>

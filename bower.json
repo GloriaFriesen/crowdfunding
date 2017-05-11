@@ -14,7 +14,8 @@
     "test",
     "tests"
   ],
-  "dependencies": {
-    "bootstrap": "^3.3.7"
+  "dependencies": {},
+  "devDependencies": {
+    "motion-ui": "^1.2.2"
   }
 }

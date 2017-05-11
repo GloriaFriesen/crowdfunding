@@ -1,28 +1,33 @@
 <div class="container">
-  <h4>Edit Project</h4>
-  <label>Title</label>
-  <input [(ngModel)]="selectedProject.title">
-  <br>
-  <label>Description</label>
-  <input [(ngModel)]="selectedProject.description">
-  <br>
-  <label>Goal</label>
-  <input [(ngModel)]="selectedProject.goal">
-  <br>
-  <label>How Funding Will Be Spent</label>
-  <input [(ngModel)]="selectedProject.purpose">
-  <br>
-  <label>Rewards for Funding</label>
-  <input [(ngModel)]="selectedProject.rewards">
-  <br>
-  <label>Type of Project</label>
-  <input [(ngModel)]="selectedProject.type">
-  <br>
-  <label>Project Starters</label>
-  <input [(ngModel)]="selectedProject.innovators">
-  <br>
-  <button (click)="beginUpdateProject(selectedProject)">Update</button>
-  <br>
-  <button (click)="beginDeleteProject(selectedProject)">Delete</button>
-  <hr>
+  <div class="row">
+    <div class="alert callout" data-closable="slide-out-right">
+      <h4>Edit Project</h4>
+      <label>Title</label>
+      <input [(ngModel)]="selectedProject.title">
+      <br>
+      <label>Description</label>
+      <input [(ngModel)]="selectedProject.description">
+      <br>
+      <label>Goal</label>
+      <input [(ngModel)]="selectedProject.goal">
+      <br>
+      <label>How Funding Will Be Spent</label>
+      <input [(ngModel)]="selectedProject.purpose">
+      <br>
+      <label>Rewards for Funding</label>
+      <input [(ngModel)]="selectedProject.rewards">
+      <br>
+      <label>Type of Project</label>
+      <input [(ngModel)]="selectedProject.type">
+      <br>
+      <label>Project Starters</label>
+      <input [(ngModel)]="selectedProject.innovators">
+      <br>
+      <button type="button" class="alert button" (click)="beginUpdateProject(selectedProject)">Update</button>
+      <br>
+      <button (click)="beginDeleteProject(selectedProject)" aria-label="Dismiss alert" type="button" data-close>
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+  </div>
 </div>
